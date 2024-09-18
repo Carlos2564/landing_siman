@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    background-color: orange;
+    background-image: url('/html_css/assets/imagenes/fondo.jpg');
+    background-size: cover;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+/*--header--*/
+.container > .header {
+    text-align: center;
+    height: 20vh;
+}
+/*---img logo---*/
+.container .header .img-container{
+    height: 20vh;
+}
+
+.container .header .img-container .img-logo{
+    height: 13vh;
+}
+
+/*---navbar---*/
+
+.container .header .navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw; 
+    margin: 0 auto;
+}
+
+.container .header .navbar .navbar-item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.container .header .navbar .navbar-item:hover{
+    color: #f5642b;
+    font-size: 1.3em;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+/*---main conter---*/
+
+.container .main-container{
+    text-align: center;
+    margin-top: 10vh;
+    padding: 5vh;
+}
+
+.container .main-container .main-text-container{
+    color: white;
+    padding-top: 10vh;
+    padding: 4rem;
+}
+
+.container .main-container .main-text-container h1{
+    font-family: "rubik", sans-serif;
+    font-size: 5em;
+    transition: 0.3S;
+}
+
+.container .main-container .main-text-container h1:hover{
+    text-shadow: 0.05em 0.05em #f5642b;
+    transition: 0.3S;
+}
+
+.container .main-container .main-text-container p{
+    color: rgb(157, 156, 156);
+    font-family: "Monserrat", sans-serif;
+    font-size: 1.0em;
+}
+
+.container .main-container .main-text-container p strong a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.08em 0.08em #f5642b;
+}
+
+.container .main-container .map-container .google-map{
+    height: 400px;
+    width: 550px;
+}
+
+.container .footer{
+    color: white;
+    text-align: center;
+
+}
+
+.container .footer h4{
+    font-size: 1.1em;
+}
+
+/*estilos responsive para tablets*/
+@media (min-width: 768px) and (max-width: 992px){
+    .container .header .navbar{
+        width: 50vw;
+    }
+}
+
+/*media para celulares l*/
+@media (min-width: 530px) and (max-width: 750px){
+    .container .header .navbar{
+        width: 75vw
+    }
+} 
+
+/*media para celolares general*/
+@media (min-width: 310px) and (max-width: 529px){
+    .container{
+        margin: 0;
+        width: 100vw;
+    }
+    .container .header{
+        margin-left: 9vw;
+       
+    }
+    .container .header .img-container{
+        margin-left: 21vw;
+    }
+    .container .header .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 100vw;
+        gap: 0.5rem;
+    }
+    .container .main-container{
+        width: 100vw;
+    }
+    .container .main-container .main-text-container{
+        width: 100vw;
+        
+    }
+    .container.main-container .main-text-container p{
+        width: 60vw;
+    }
+
+    .container .main-container .map-container{
+        margin-left: 15vw;
+    }
+
+    .container .main-container .map-container .google-map{
+        height: 40vh;
+        width: 90vw;
+    }
+    
+    }
