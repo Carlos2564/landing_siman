@@ -1,0 +1,74 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    padding: 10px;
+  }
+  
+  /* Imagen a la izquierda*/
+  .img-container {
+    float: left;
+    width: 10vw;
+    margin-left: 20px; 
+  }
+  
+  .img-container img {
+    width: 100%;
+  }
+  
+  
+  /* Estilos de la barra de búsqueda */
+  .navbar.bg-body-tertiary {
+    background-color: #a81c1d; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar.bg-body-tertiary input[type="search"] {
+    border-radius: 20px;
+    padding: 10px;
+    width: 30vw;
+    border: none;
+  }
+  
+  .navbar.bg-body-tertiary button {
+    background-color: #fff;
+    border: none;
+    color: #a81c1d;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .navbar.bg-body-tertiary button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Navegación entre pestañas */
+  .navbar-expand {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar-expand .nav-link {
+    color: #000;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .navbar-expand .nav-link:hover {
+    color: #a81c1d;
+  }
+  
+  .navbar-expand .nav-link.active {
+    font-weight: bold;
+    color: #a81c1d;
+    border-bottom: 2px solid #a81c1d;
+  }
+  
